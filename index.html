@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathal - Cloud Computing Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- nav bar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Cathal's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <!-- Profile Photo in top right i hope-->
+            <div class="text-end mb-4">
+                <img class="profile-photo" src="images/me.jpg" alt="Cathal" />
+            </div>
+            <div class="container text-center">
+                <h1 class="display-3 fw-bold">Cathal</h1>
+                <p class="lead">Final Year Cloud Computing Student | TU Dublin</p>
+                <p class="mt-3">DevOps | Cloud Computing | IoT | Data Visualization | Enterprise Performance Architecture</p>
+                <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about me -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead text-center">
+                        I'm a final year B.Sc. (Hons.) Cloud Computing student at TU Dublin with a passion for
+                        technology and problem-solving. My interests span across DevOps, cloud computing,
+                        IoT platforms, and data visualization.
+                    </p>
+                    <p class="text-center">
+                        Throughout my studies, I've worked on diverse projects ranging from building RFID
+                        attendance systems to implementing CI/CD pipelines and creating interactive data
+                        dashboards.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- explore portfolio  -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Explore My Portfolio</h2>
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-mortarboard quick-link-icon"></i>
+                            <h5 class="card-title">Education</h5>
+                            <p class="card-text">Learn about my academic background and coursework at TU Dublin</p>
+                            <a href="#education" class="btn btn-outline-primary">View Education</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-code-square quick-link-icon"></i>
+                            <h5 class="card-title">Projects</h5>
+                            <p class="card-text">Explore my technical projects including IoT, DevOps, and data visualization</p>
+                            <a href="#projects" class="btn btn-outline-primary">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 text-center shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-tools quick-link-icon"></i>
+                            <h5 class="card-title">Skills</h5>
+                            <p class="card-text">Discover my technical skills in DevOps, Cloud, IoT, and more</p>
+                            <a href="#skills" class="btn btn-outline-primary">View Skills</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- heading -->
+    <section id="education" class="page-header">
+        <div class="container text-center">
+            <h1 class="display-4">Education</h1>
+            <p class="lead">My Academic Background & Coursework</p>
+        </div>
+    </section>
+
+    <!-- education -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">B.Sc. (Hons.) in Cloud Computing</h3>
+                            <i class="bi bi-backpack"></i><h5 class="text-muted">Technological University Dublin</h5>
+                            <p class="mb-3"><i class="bi bi-calendar3"></i> 2025 - 2026 (Expected)</p>
+                            <p class="mb-4">
+                                Currently in my final year of Cloud Computing at TU Dublin, I have developed
+                                comprehensive knowledge across enterprise technologies, cloud computing,
+                                DevOps practices, and data visualization techniques.
+                            </p>
+
+                            <h5 class="mt-4 mb-3">Key Modules Completed:</h5>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Enterprise Performance Architecture</h6>
+                                        <p class="small mb-0">Resource isolation, software architectures, containerization with Docker, infrastructure as code with Terraform</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> AWS Academy Cloud Foundations</h6>
+                                        <p class="small mb-0">Hands-on experience with S3 buckets, EC2 instances, CloudFormation templates, and CLI operations</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> DevOps & CI/CD</h6>
+                                        <p class="small mb-0">Azure DevOps pipelines, GitHub Actions workflows, automated testing, and continuous integration practices</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Data Visualization</h6>
+                                        <p class="small mb-0">Tableau dashboard development, interactive visualizations, accessibility-compliant design, LOD expressions</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> IoT Systems Development</h6>
+                                        <p class="small mb-0">ESP32 microcontroller programming, sensor integration, RFID systems, IoT platform comparison</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Private Cloud Architecture</h6>
+                                        <p class="small mb-0">Hypervisor comparison (VirtualBox, Hyper-V), network configuration, virtual infrastructure deployment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">B.Sc. (Ord.) Networking Technologies</h3>
+                            <i class="bi bi-backpack"></i><h5 class="text-muted">Technological University Dublin</h5>
+                            <p class="mb-3"><i class="bi bi-calendar3"></i> 2022- 2025</p>
+                            <p class="mb-4">
+                                Completed a 3 year course in Networking Technologies in Grangegorman. The course thought me many real world techniques that I have deployed within this portfolio.
+                                The modules in which I learned these techniques are from Work placement, Internet of Things, Multimedia Voice and Video, Network Management,
+                                Programming for Networked Systems, Web Development, and Server Side Web Development.
+                            </p>
+
+                            <h5 class="mt-4 mb-3">Key Modules Completed:</h5>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Work placement </h6>
+                                        <p class="small mb-0">Working in the real world - were I worked for Nissan Ireland as a helpdesk technician</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Internet of Things</h6>
+                                        <p class="small mb-0">Arduino, Wifi, Frequency Modulation, Sensors</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Multimedia Voice and Video</h6>
+                                        <p class="small mb-0">Design, architecture, QoS, Encodings, VoIP</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i>Network Management</h6>
+                                        <p class="small mb-0">CDP, DHCP, RADIUS, jitter, Wireshark</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i>  Programming for Networked Systems</h6>
+                                        <p class="small mb-0">Python classes and objects, functions, TCP & UDP, Client - Server Programming</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <div class="module-card">
+                                        <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Web Development</h6>
+                                        <p class="small mb-0">HTML, Websit Design, Accessibilty, Privacy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- heading -->
+    <section id="projects" class="page-header">
+        <div class="container text-center">
+            <h1 class="display-4">My Projects</h1>
+            <p class="lead">Technical Projects from Years 2, 3 & 4</p>
+        </div>
+    </section>        
+
+    <!-- projects-->
+    <section class="py-5">
+        <div class="container">
+            <!-- Project 1 -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <div class="card shadow-sm project-card">
+                        <div class="card-body">
+
+                            <img src="images/coastelier.png" class="img-fluid mb-3 rounded" alt="Clothing Site">
+
+                            <div class="project-badge">Clothing Website</div>
+                            <h3 class="card-title text-primary">Designed, set up & run a successful clothing brand website</h3>
+                            <p class="text-muted mb-3"><i class="bi bi-calendar3"></i> 2025 Coastelier</p>
+
+                            <p>
+                                Launched an independent clothing brand with a friend (coastelier.com) inspired by the relaxed luxury of the French Riviera, focusing on premium-quality t-shirts and hoodies. 
+                                Responsible for brand identity & development, social media strategy on Facebook, Instagram and TikTok, and e-commerce setup via Shopify, both frontend and supplier logistics.
+                            </p>
+
+                            <h6 class="mt-3">Technologies Used:</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-danger me-1">GoDaddy</span>
+                                <span class="badge bg-danger me-1">HTML</span>
+                                <span class="badge bg-danger me-1">CSS</span>
+                                <span class="badge bg-danger me-1">JS</span>
+                                <span class="badge bg-danger me-1">Liquid</span>
+                            </div>
+                            <p>
+                                <a href="https://coastelier.com/">Visit Coastelier.com <i class="bi bi-badge-ad"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <div class="card shadow-sm project-card">
+                        <div class="card-body">
+                            <img src="images/iot_project.png" class="img-fluid mb-3 rounded" alt="IoT Project">
+                            <br />
+                            <div class="project-badge">
+                                Year 4 Project
+                            </div>
+                            <h3 class="card-title text-primary">IoT Platform Research for QR Code Attendance System</h3>
+                            <p class="text-muted mb-3"><i class="bi bi-calendar3"></i> 2025 - Final Year Project (Ongoing)</p>
+
+                            <p>
+                                Comprehensive research project comparing multiple IoT platforms (Node-RED, ThingsBoard)
+                                for implementing a QR code-based attendance monitoring and room occupancy system.
+                                This project involves real stakeholder engagement with TU Dublin's Campus Planning team
+                                to validate requirements and ensure practical applicability.
+                            </p>
+
+                            <h6 class="mt-3">Technologies Used:</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-primary me-1">Node-RED</span>
+                                <span class="badge bg-primary me-1">ThingsBoard</span>
+                                <span class="badge bg-primary me-1">Docker</span>
+                                <span class="badge bg-primary me-1">IoT Protocols</span>
+                                <span class="badge bg-primary me-1">QR Code Systems</span>
+                            </div>
+
+                            <h6>Key Achievements:</h6>
+                            <ul>
+                                <li>Successfully validated stakeholder requirements with Campus Planning team</li>
+                                <li>Completed comprehensive platform comparison analysis</li>
+                                <li>Produced detailed technical documentation</li>
+                                <li>Evaluated scalability and deployment considerations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <div class="card shadow-sm project-card">
+                        <div class="card-body">
+                            <div class="project-badge">Year 3 Project</div>
+                            <h3 class="card-title text-primary">RFID Attendance Tracking System</h3>
+                            <p class="text-muted mb-3"><i class="bi bi-calendar3"></i> 2024 - Year 3 Project</p>
+
+                            <p>
+                                Developed a highly accurate RFID-based attendance system using ESP32 microcontrollers
+                                that achieved 99% accuracy in real-world testing conditions. The system integrated
+                                seamlessly with Google Sheets for real-time data logging and reporting capabilities.
+                            </p>
+
+                            <h6 class="mt-3">Technologies Used:</h6>
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark me-1">ESP32</span>
+                                <span class="badge bg-warning text-dark me-1">RFID</span>
+                                <span class="badge bg-warning text-dark me-1">C++</span>
+                                <span class="badge bg-warning text-dark me-1">Google Sheets API</span>
+                                <span class="badge bg-warning text-dark me-1">IoT</span>
+                            </div>
+
+                            <h6>Key Achievements:</h6>
+                            <ul>
+                                <li><strong>99% accuracy rate</strong> in real-world testing</li>
+                                <li>Successful deployment and positive stakeholder feedback</li>
+                                <li>Real-time data synchronization with Google Sheets</li>
+                                <li>Demonstrated practical application of IoT technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- heading for experience -->
+    <section id="experience" class="page-header">
+        <div class="container text-center">
+            <h1 class="display-4">Work Experience</h1>
+            <p class="lead">Professional & Academic Experience</p>
+        </div>
+    </section>
+
+    <!-- experience -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- work exp-->
+
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title text-primary">First Line Helpdesk Techncian for Nissan Ireland</h4>
+                            <h6 class="text-muted">Nissan Ireland & Windsor Motors</h6>
+                            <p class="text-muted"><i class="bi bi-calendar3"></i> Feb 2025 - Sep 2025</p>
+
+                           <p>
+                                In Nissan Ireland I was part of a small IT team that facilitated helpdesk for dealerships and corporate.
+                           </p>
+
+                            <h6 class="mt-3 mb-2">Key Responsibilities:</h6>
+                            <ul>
+                                <li>Responsibility 1: I completed daily server checks to ensure all servers were replicating</li>
+                                <li>Responsibility 2: I looked after the onboarding and offboarding of all employees ensuring they had all related permissions and software to complete their job</li>
+                                <li>Responsibility 3: I supervised and accounted a company wide Windows 11 upgrade for all possible machines before the Windows EOL upgrading over 200 machines</li>
+                            </ul>
+
+                            <h6 class="mt-3 mb-2">Technologies Used:</h6>
+                            <div>
+                                <span class="badge bg-success me-1 mb-1">Windows Server Manager</span>
+                                <span class="badge bg-success me-1 mb-1">Windows Active Directory</span>
+                                <span class="badge bg-success me-1 mb-1">Citrix Server Manager for the dealership management system</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- heading -->
+    <section id="skills" class="page-header">
+        <div class="container text-center">
+            <h1 class="display-4">Technical Skills</h1>
+        </div>
+    </section>
+
+    <!-- skills-->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="row g-4 mb-4">
+
+                <!-- DevOps & Cloud -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm skill-card">
+                        <div class="card-body">
+                            <div class="skill-icon-wrapper text-center mb-3">
+                                <i class="bi bi-cloud-arrow-up skill-icon"></i>
+                            </div>
+                            <h4 class="card-title text-center text-primary">DevOps & Cloud Computing</h4>
+                            <hr>
+                            <ul class="skill-list">
+                                <li><strong>Docker:</strong> Container creation, multi-container environments, Docker Compose</li>
+                                <li><strong>CI/CD Pipelines:</strong> Azure DevOps, GitHub Actions, automated testing workflows</li>
+                                <li><strong>AWS Services:</strong> S3 buckets, EC2 instances, CloudFormation, CLI operations</li>
+                                <li><strong>Infrastructure as Code:</strong> Terraform configurations and deployments</li>
+                                <li><strong>Monitoring:</strong> Prometheus setup and configuration</li>
+                                <li><strong>Version Control:</strong> Git, GitHub, Azure Repos, branching strategies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IoT & Hardware -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm skill-card">
+                        <div class="card-body">
+                            <div class="skill-icon-wrapper text-center mb-3">
+                                <i class="bi bi-cpu skill-icon"></i>
+                            </div>
+                            <h4 class="card-title text-center text-primary">IoT & Hardware Systems</h4>
+                            <hr>
+                            <ul class="skill-list">
+                                <li><strong>ESP32:</strong> Microcontroller programming, sensor integration</li>
+                                <li><strong>RFID Systems:</strong> Reader/tag implementation, attendance tracking</li>
+                                <li><strong>IoT Platforms:</strong> Node-RED workflows, ThingsBoard dashboards</li>
+                                <li><strong>Protocols:</strong> MQTT, HTTP/HTTPS, WebSockets</li>
+                                <li><strong>Hardware Integration:</strong> Circuit design, component selection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & Visualization -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm skill-card">
+                        <div class="card-body">
+                            <div class="skill-icon-wrapper text-center mb-3">
+                                <i class="bi bi-bar-chart-line skill-icon"></i>
+                            </div>
+                            <h4 class="card-title text-center text-primary">Data Analysis & Visualization</h4>
+                            <hr>
+                            <ul class="skill-list">
+                                <li><strong>Tableau:</strong> Dashboard development, interactive visualizations</li>
+                                <li><strong>Advanced Features:</strong> LOD expressions, calculated fields, parameters</li>
+                                <li><strong>Data Analysis:</strong> Pattern recognition, statistical analysis</li>
+                                <li><strong>Data Sources:</strong> CSV, Excel, databases, APIs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming & Development -->
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm skill-card">
+                        <div class="card-body">
+                            <div class="skill-icon-wrapper text-center mb-3">
+                                <i class="bi bi-code-slash skill-icon"></i>
+                            </div>
+                            <h4 class="card-title text-center text-primary">Programming & Development</h4>
+                            <hr>
+                            <ul class="skill-list">
+                                <li><strong>Python:</strong> Application development, scripting, automation</li>
+                                <li><strong>C/C++:</strong> Embedded systems, ESP32 programming</li>
+                                <li><strong>Bash:</strong> Shell scripting, automation tasks</li>
+                                <li><strong>Web Development:</strong> HTML5, CSS3, Bootstrap 5</li>
+                                <li><strong>YAML:</strong> Configuration files, pipeline definitions</li>
+                                <li><strong>SQL:</strong> Database queries, data manipulation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- achievemeents heading -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="display-4">Achievements</h1>
+            <p class="lead">Key Accomplishments & Milestones</p>
+        </div>
+    </section>
+
+    <!-- achievements -->
+    <section id="achievements" class="py-5">
+        <div class="container">
+
+            <div class="row g-4 mb-4">
+
+                <div class="col-md-4">
+                    <div class="card text-center h-100 shadow-sm achievement-card">
+                        <div class="card-body">
+                            <i class="bi bi-trophy achievement-icon"></i>
+                            <h5 class="card-title">99% Accuracy Rate</h5>
+                            <p class="card-text">
+                                Achieved 99% accuracy with RFID attendance tracking system in Year 3 project.
+                                System was tested extensively in real-world conditions with consistent performance.
+                            </p>
+                            <span class="badge bg-warning text-dark">Year 3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center h-100 shadow-sm achievement-card">
+                        <div class="card-body">
+                            <i class="bi bi-check-circle achievement-icon"></i>
+                            <h5 class="card-title">100% Test Coverage</h5>
+                            <p class="card-text">
+                                Achieved complete test coverage in CI/CD pipeline project for Python calculator
+                                application with automated testing workflows.
+                            </p>
+                            <span class="badge bg-success">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center h-100 shadow-sm achievement-card">
+                        <div class="card-body">
+                            <i class="bi bi-basket achievement-icon"></i>
+                            <h5 class="card-title">Real World Application</h5>
+                            <p class="card-text">
+                                Created a fully functional clothing brand website with my own designs and marketing,
+                                Everything from adding favicon to enquiring for a GoDaddy cert and buying the URL.
+                            </p>
+                            <span class="badge bg-success">Academic</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- hobbies header -->
+    <section id="hobbies" class="page-header">
+        <div class="container text-center">
+            <h1 class="display-4">Hobbies & Interests</h1>
+            <p class="lead">Hobbies that are outside of college work</p>
+        </div>
+    </section>
+
+    <!-- hobbies -->
+    <section class="py-4">
+        <div class="container">
+
+            <div class="row g-3 mb-4">
+
+                <div class="col-md-4">
+                    <div class="card text-center h-100 shadow-sm hobby-card">
+                        <div class="card-body">
+                            <i class="bi bi-pc-display hobby-icon"></i>
+                            <h5 class="card-title">PC Building & Hardware</h5>
+                            <p class="card-text">
+                                Currently building a high performing gaming PC with components
+                                including AMD Ryzen 5 9600X processor and RX 9060 XT GPU.
+                            </p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-1">Hardware</span>
+                                <span class="badge bg-primary me-1">Performance</span>
+                                <span class="badge bg-primary me-1">Building</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center h-100 shadow-sm hobby-card">
+                        <div class="card-body">
+                            <i class="bi bi-controller hobby-icon"></i>
+                            <h5 class="card-title">Gaming</h5>
+                            <p class="card-text">
+                                I always had a love for games, from board games and card games to multiplayer FPS.
+                            </p>
+                            <div class="mt-3">
+                                <span class="badge bg-success me-1">Gaming</span>
+                                <span class="badge bg-success me-1">Strategy</span>
+                                <span class="badge bg-success me-1">Pattern Recognition</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interest Section -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h4 class="text-center text-primary mb-4">Current PC Build Project</h4>
+
+                            <p class="lead text-center mb-4">
+                                I chose to begin building a custom gaming PC as it's an opportunity to
+                                apply technical knowledge in a practical, in an hands on way.
+                            </p>
+
+                            <h6 class="mb-3">Selected Components:</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            <i class="bi bi-cpu-fill text-primary"></i>
+                                            <strong>Processor choice:</strong> AMD Ryzen 5 9600X
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="bi bi-gpu-card text-success"></i>
+                                            <strong>Graphics Card:</strong> RX 9060 XT GPU
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="bi bi-display text-info"></i>
+                                            <strong>Current Monitor:</strong> Acer 270R Curved
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="alert alert-secondary">
+                                        <h6 class="alert-heading">Research Phase</h6>
+                                        <p class="small mb-0">
+                                            Currently researching monitor upgrades to complement the new build.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- contact heading -->
+    <section id="contact" class="page-header">
+        <div class="container text-center">
+            <h1 class="display-4">Get In Touch</h1>
+        </div>
+    </section>
+
+    <!-- contact me -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Contact Cards -->
+                    <div class="row g-4 mb-5">
+
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm text-center contact-card">
+                                <div class="card-body">
+                                    <i class="bi bi-envelope contact-icon"></i>
+                                    <h5 class="card-title">Email</h5>
+                                    <p class="card-text">
+                                        <a href="mailto:C22312211@mytudublin.ie">C22312211@mytudublin.ie</a>
+                                    </p>
+                                    <p class="small text-muted">Best way to reach me for professional inquiries</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm text-center contact-card">
+                                <div class="card-body">
+                                    <i class="bi bi-geo-alt contact-icon"></i>
+                                    <h5 class="card-title">Location</h5>
+                                    <p class="card-text">Dublin, Ireland</p>
+                                    <p class="small text-muted">Based in Dublin, open to opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--  Modal Button -->
+                    <div class="card shadow-sm mb-5">
+                        <div class="card-body text-center">
+                            <h5 class="card-title mb-4">Connect With Me</h5>
+
+                            <div class="d-flex justify-content-center gap-3 mb-4">
+                                <a href="mailto:C22312211@mytudublin.ie" class="btn btn-outline-primary btn-lg">
+                                    <i class="bi bi-envelope-fill"></i> Email
+                                </a>
+                                <a href="https://www.linkedin.com/in/cathal-flood/" target="_blank" class="btn btn-outline-primary btn-lg">
+                                    <i class="bi bi-linkedin"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/floodcathal123" target="_blank" class="btn btn-outline-primary btn-lg">
+                                    <i class="bi bi-github"></i> GitHub
+                                </a>
+                            </div>
+
+                            <!-- Button to trigger modal -->
+                            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">
+                                <i class="bi bi-info-circle"></i> View Full Contact Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">
+                        <i class="bi bi-person-circle"></i> Contact Information
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-detail mb-3">
+                        <h6><i class="bi bi-person-fill text-primary"></i> Name</h6>
+                        <p class="ms-4">Cathal</p>
+                    </div>
+
+                    <div class="contact-detail mb-3">
+                        <h6><i class="bi bi-mortarboard-fill text-primary"></i> Course</h6>
+                        <p class="ms-4">
+                            B.Sc. (Hons.) Cloud Computing<br>
+                            <span class="text-muted small">Final Year Student</span>
+                        </p>
+                    </div>
+
+                    <div class="contact-detail mb-3">
+                        <h6><i class="bi bi-building text-primary"></i> Institution</h6>
+                        <p class="ms-4">Technological University Dublin</p>
+                    </div>
+
+                    <div class="contact-detail mb-3">
+                        <h6><i class="bi bi-envelope-fill text-primary"></i> Email</h6>
+                        <p class="ms-4">
+                            <a href="mailto:C22312211@mytudublin.ie">C22312211@mytudublin.ie</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-detail mb-3">
+                        <h6><i class="bi bi-linkedin text-primary"></i> LinkedIn</h6>
+                        <p class="ms-4">
+                            <a href="https://www.linkedin.com/in/cathal-flood/" target="_blank">linkedin.com/in/cathal-flood/</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-detail mb-3">
+                        <h6><i class="bi bi-github text-primary"></i> GitHub</h6>
+                        <p class="ms-4">
+                            <a href="https://github.com/floodcathal123" target="_blank">github.com/floodcathal123</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <h6><i class="bi bi-geo-alt-fill text-primary"></i> Location</h6>
+                        <p class="ms-4">Dublin, Ireland</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="mailto:C22312211@mytudublin.ie" class="btn btn-primary">
+                        <i class="bi bi-envelope"></i> Send Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 Cathal. Built with Bootstrap for TU Dublin Data Visualization CA2.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

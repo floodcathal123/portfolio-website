@@ -1,0 +1,315 @@
+﻿/* CUSTOM STYLES FOR SINGLE-PAGE PORTFOLIO */
+
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    padding-top: 56px; /* Space for fixed navbar */
+}
+/* Profile Photo Styling */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures image fits nicely */
+    border: 4px solid white; /* White border around photo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Subtle shadow */
+}
+
+/* Responsive - smaller on mobile */
+@media (max-width: 768px) {
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Navbar Styling */
+.navbar {
+    position: fixed; /* Changed from sticky to fixed */
+    top: 0;
+    width: 100%; /* Make sure it spans full width */
+    z-index: 1030; /* Ensure navbar stays on top of all content */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #89CFF0 !important;
+    }
+
+/* Fix for sections scrolling under navbar */
+section {
+    scroll-margin-top: 80px; /* Offset for navbar height + spacing */
+}
+
+/* Hero section special handling */
+#home.hero-section {
+    scroll-margin-top: 0; /* No offset for hero */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #89CFF0 0%, #8B0000 100%);
+    color: white;
+    padding: 150px 0 100px 0;
+    margin-top: -56px;
+}
+
+    .hero-section h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-section .lead {
+        font-size: 1.5rem;
+    }
+
+/* Section Styling */
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    color: #667eea;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+/* Module Cards */
+.module-card {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    height: 100%;
+}
+
+/* Project Cards */
+.project-card {
+    margin-bottom: 0;
+}
+
+.project-badge {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Skill Icons */
+.skill-icon {
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.skill-card ul {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-card li {
+    padding: 5px 0;
+}
+
+    .skill-card li:before {
+        content: "✓ ";
+        color: #667eea;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+/* Achievement Icons */
+.achievement-icon {
+    font-size: 3.5rem;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+/* Hobby Icons */
+.hobby-icon {
+    font-size: 3.5rem;
+    color: #764ba2;
+    margin-bottom: 15px;
+}
+
+/* Social Links */
+.social-links .btn {
+    margin: 5px;
+}
+
+/* Modal Styling */
+.modal-body p {
+    margin-bottom: 15px;
+}
+
+.modal-body a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+    .modal-body a:hover {
+        text-decoration: underline;
+    }
+
+/* Footer */
+footer {
+    margin-top: 0;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+    .btn-primary:hover {
+        background-color: #5568d3;
+        border-color: #5568d3;
+    }
+
+.btn-outline-primary {
+    color: #667eea;
+    border-color: #667eea;
+}
+
+    .btn-outline-primary:hover {
+        background-color: #667eea;
+        border-color: #667eea;
+        color: white;
+    }
+
+.btn-light {
+    background-color: white;
+    color: #667eea;
+    border: none;
+}
+
+    .btn-light:hover {
+        background-color: #f8f9fa;
+        color: #5568d3;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 0 60px 0;
+    }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero-section .lead {
+            font-size: 1.2rem;
+        }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .navbar-collapse {
+        background-color: #343a40;
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Badge styling */
+.badge {
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+/* List styling */
+ul {
+    line-height: 1.8;
+}
+
+/* Timeline Styling for Achievements Page */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+
+    .timeline-item:last-child {
+        padding-bottom: 0;
+    }
+
+.timeline-badge {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.timeline-content {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+    .timeline-content h6 {
+        margin-bottom: 8px;
+        color: #667eea;
+    }
+
+/* Contact Icons */
+.contact-icon {
+    font-size: 3rem;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.contact-card:hover {
+    border-color: #667eea;
+}
+
+/* Quick Link Icons */
+.quick-link-icon {
+    font-size: 4rem;
+    color: #667eea;
+    margin-bottom: 20px;
+}
