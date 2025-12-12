@@ -16,15 +16,18 @@
 </head>
 <body>
 
-    <!-- nav bar  -->
+    <!-- nav bar stuck to top (add sticky bar in css)  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#index">Cathal's Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+                <!--for mobile -->
+                <span class="navbar-toggler-icon"></span> <!--button for naviagtion (3 liners) -->
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <!-- ms auto for pushed items to the right-->
+                    <!--linked sections connected to each heading-->
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
@@ -44,12 +47,15 @@
         <div class="container">
             <!-- Profile Photo in top right i hope-->
             <div class="text-end mb-4">
+                <!--image of me added to the top section (rounded) -->
                 <img class="profile-photo" src="images/me.png" alt="Cathal" />
             </div>
             <div class="container text-center">
                 <h1 class="display-3 fw-bold">Cathal</h1>
+                <!--lead text for larger text -->
                 <p class="lead">Final Year Cloud Computing Student | TU Dublin</p>
                 <p class="mt-3">DevOps | Cloud Computing | IoT | Data Visualization | Enterprise Performance Architecture</p>
+                <!-- call to action bootstrap linking button (large button)-->
                 <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Projects</a>
             </div>
         </div>
@@ -59,8 +65,10 @@
     <section id="about" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center mb-4">About Me</h2>
+            <!--bootstrap grid: row container -->
             <div class="row justify-content-center">
                 <div class="col-lg-8">
+                    <!--8 columns wide -->
                     <p class="lead text-center">
                         I'm a final year B.Sc. (Hons.) Cloud Computing student at TU Dublin with a passion for
                         technology and problem-solving. My interests span across DevOps, cloud computing,
@@ -78,39 +86,48 @@
     </section>
 
     <!-- explore portfolio  -->
+    <!--three card layout linking to main sections using cards and grid system -->
     <section class="py-5">
+        <!--container -->
         <div class="container">
             <h2 class="text-center mb-5">Explore My Portfolio</h2>
             <div class="row g-4">
-
+                <!--Education card -->
                 <div class="col-md-4">
+                    <!-- bootstrap card h100 making all cards the same height-->
                     <div class="card h-100 text-center shadow-sm">
                         <div class="card-body">
+                            <!--grad cap icon -->
                             <i class="bi bi-mortarboard quick-link-icon"></i>
                             <h5 class="card-title">Education</h5>
                             <p class="card-text">Learn about my academic background and coursework at TU Dublin</p>
                             <a href="#education" class="btn btn-outline-primary">View Education</a>
+                            <!--link to education  -->
                         </div>
                     </div>
                 </div>
-
+                <!--Project card -->
                 <div class="col-md-4">
                     <div class="card h-100 text-center shadow-sm">
                         <div class="card-body">
+                            <!--CLI icon -->
                             <i class="bi bi-code-square quick-link-icon"></i>
                             <h5 class="card-title">Projects</h5>
                             <p class="card-text">Explore my technical projects including IoT, DevOps, and data visualization</p>
+                            <!--link to projects section -->
                             <a href="#projects" class="btn btn-outline-primary">View Projects</a>
                         </div>
                     </div>
                 </div>
-
+                <!--skills card -->
                 <div class="col-md-4">
                     <div class="card h-100 text-center shadow-sm">
                         <div class="card-body">
+                            <!--icon for skills just tools -->
                             <i class="bi bi-tools quick-link-icon"></i>
                             <h5 class="card-title">Skills</h5>
                             <p class="card-text">Discover my technical skills in DevOps, Cloud, IoT, and more</p>
+                            <!--link to skills section -->
                             <a href="#skills" class="btn btn-outline-primary">View Skills</a>
                         </div>
                     </div>
@@ -129,15 +146,19 @@
     </section>
 
     <!-- education -->
+    <!--using card grid and alert -->
     <section class="py-5">
         <div class="container">
             <div class="row justify-content-center">
+                <!--column size of 10 -->
                 <div class="col-lg-10">
-
+                    <!--degree card with shadow-->
                     <div class="card shadow-sm mb-4">
                         <div class="card-body">
+                            <!--card title in blue and large -->
                             <h3 class="card-title text-primary">B.Sc. (Hons.) in Cloud Computing</h3>
                             <i class="bi bi-backpack"></i><h5 class="text-muted">Technological University Dublin</h5>
+                            <!--calendar icon -->
                             <p class="mb-3"><i class="bi bi-calendar3"></i> 2025 - 2026 (Expected)</p>
                             <p class="mb-4">
                                 Currently in my final year of Cloud Computing at TU Dublin, I have developed
@@ -146,43 +167,45 @@
                             </p>
 
                             <h5 class="mt-4 mb-3">Key Modules Completed:</h5>
-
+                            <!--module grid 2 side by side -->
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
+                                        <!--tick icon before module title -->
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Enterprise Performance Architecture</h6>
+                                        <!--smaller descriptor of mdoule -->
                                         <p class="small mb-0">Resource isolation, software architectures, containerization with Docker, infrastructure as code with Terraform</p>
                                     </div>
                                 </div>
-
+                                <!--module 2 -->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> AWS Academy Cloud Foundations</h6>
                                         <p class="small mb-0">Hands-on experience with S3 buckets, EC2 instances, CloudFormation templates, and CLI operations</p>
                                     </div>
                                 </div>
-
+                                <!--module 3 -->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> DevOps & CI/CD</h6>
                                         <p class="small mb-0">Azure DevOps pipelines, GitHub Actions workflows, automated testing, and continuous integration practices</p>
                                     </div>
                                 </div>
-
+                                <!--module 4 -->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Data Visualization</h6>
                                         <p class="small mb-0">Tableau dashboard development, interactive visualizations, accessibility-compliant design, LOD expressions</p>
                                     </div>
                                 </div>
-
+                                <!-- module 5-->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> IoT Systems Development</h6>
                                         <p class="small mb-0">ESP32 microcontroller programming, sensor integration, RFID systems, IoT platform comparison</p>
                                     </div>
                                 </div>
-
+                                <!--module 6 -->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Private Cloud Architecture</h6>
@@ -196,61 +219,64 @@
             </div>
         </div>
     </section>
-
+    <!--same layout for older course -->
     <section class="py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-
+                    <!--module title and descriptor -->
                     <div class="card shadow-sm mb-4">
                         <div class="card-body">
                             <h3 class="card-title text-primary">B.Sc. (Ord.) Networking Technologies</h3>
+                            <!--backpack icon -->
                             <i class="bi bi-backpack"></i><h5 class="text-muted">Technological University Dublin</h5>
+                            <!--calendar icon before year -->
                             <p class="mb-3"><i class="bi bi-calendar3"></i> 2022- 2025</p>
                             <p class="mb-4">
                                 Completed a 3 year course in Networking Technologies in Grangegorman. The course thought me many real world techniques that I have deployed within this portfolio.
                                 The modules in which I learned these techniques are from Work placement, Internet of Things, Multimedia Voice and Video, Network Management,
                                 Programming for Networked Systems, Web Development, and Server Side Web Development.
                             </p>
-
+                            <!--module cards -->
                             <h5 class="mt-4 mb-3">Key Modules Completed:</h5>
-
+                            <!--work placement -->
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
+                                        <!--check mark before module title -->
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Work placement </h6>
-                                        <p class="small mb-0">Working in the real world - were I worked for Nissan Ireland as a helpdesk technician</p>
+                                        <p class="small mb-0">Working in the real world, were I worked for Nissan Ireland as a helpdesk technician</p>
                                     </div>
                                 </div>
-
+                                <!--IOT -->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Internet of Things</h6>
                                         <p class="small mb-0">Arduino, Wifi, Frequency Modulation, Sensors</p>
                                     </div>
                                 </div>
-
+                                <!--Multimedia -->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Multimedia Voice and Video</h6>
-                                        <p class="small mb-0">Design, architecture, QoS, Encodings, VoIP</p>
+                                        <p class="small mb-0">CCNA, Design, architecture, QoS, Encodings, VoIP</p>
                                     </div>
                                 </div>
-
+                                <!--Netowrk management -->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i>Network Management</h6>
                                         <p class="small mb-0">CDP, DHCP, RADIUS, jitter, Wireshark</p>
                                     </div>
                                 </div>
-
+                                <!--Prog for Netw SYS -->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i>  Programming for Networked Systems</h6>
                                         <p class="small mb-0">Python classes and objects, functions, TCP & UDP, Client - Server Programming</p>
                                     </div>
                                 </div>
-
+                                <!--web dev -->
                                 <div class="col-md-6 mb-3">
                                     <div class="module-card">
                                         <h6 class="text-primary"><i class="bi bi-check-circle-fill"></i> Web Development</h6>
@@ -272,8 +298,8 @@
             <h1 class="display-4">My Projects</h1>
             <p class="lead">Technical Projects from Years 2, 3 & 4</p>
         </div>
-    </section>        
-
+    </section>
+    <!--bootstrap used: cards badgers grids -->
     <!-- projects-->
     <section class="py-5">
         <div class="container">
@@ -282,18 +308,18 @@
                 <div class="col-lg-12">
                     <div class="card shadow-sm project-card">
                         <div class="card-body">
-
+                            <!--image responsive, rounded corners -->
                             <img src="images/coastelier.png" class="img-fluid mb-3 rounded" alt="Clothing Site">
-
+                            <!--Project badge in rounded card pill  -->
                             <div class="project-badge">Clothing Website</div>
                             <h3 class="card-title text-primary">Designed, set up & run a successful clothing brand website</h3>
-                            <p class="text-muted mb-3"><i class="bi bi-calendar3"></i> 2025 Coastelier</p>
-
+                            <p class="text-muted mb-3"><i class="bi bi-calendar3"></i> 2025 Coastelier</p> <!--calendar icon before year -->
+                            <!--proje description -->
                             <p>
-                                Launched an independent clothing brand with a friend (coastelier.com) inspired by the relaxed luxury of the French Riviera, focusing on premium-quality t-shirts and hoodies. 
+                                Launched an independent clothing brand with a friend (coastelier.com) inspired by the relaxed luxury of the French Riviera, focusing on premium-quality t-shirts and hoodies.
                                 Responsible for brand identity & development, social media strategy on Facebook, Instagram and TikTok, and e-commerce setup via Shopify, both frontend and supplier logistics.
                             </p>
-
+                            <!--technologies used list in badge pills color coded (red) -->
                             <h6 class="mt-3">Technologies Used:</h6>
                             <div class="mb-3">
                                 <span class="badge bg-danger me-1">GoDaddy</span>
@@ -303,6 +329,7 @@
                                 <span class="badge bg-danger me-1">Liquid</span>
                             </div>
                             <p>
+                                <!--link to website and ad icon for fun -->
                                 <a href="https://coastelier.com/">Visit Coastelier.com <i class="bi bi-badge-ad"></i></a>
                             </p>
                         </div>
@@ -310,16 +337,19 @@
                 </div>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project 2 new card -->
             <div class="row mb-5">
                 <div class="col-lg-12">
                     <div class="card shadow-sm project-card">
                         <div class="card-body">
+                            <!--project image -->
                             <img src="images/iot_project1.png" alt="IoT Project">
                             <br />
+                            <!--break because it would not fit correctly + project badge  -->
                             <div class="project-badge">
                                 Year 4 Project
                             </div>
+                            <!--project title and calendar icon before year -->
                             <h3 class="card-title text-primary">IoT Platform Research for QR Code Attendance System</h3>
                             <p class="text-muted mb-3"><i class="bi bi-calendar3"></i> 2025 - Final Year Project (Ongoing)</p>
 
@@ -332,6 +362,7 @@
 
                             <h6 class="mt-3">Technologies Used:</h6>
                             <div class="mb-3">
+                                <!--badge pill section -->
                                 <span class="badge bg-primary me-1">Node-RED</span>
                                 <span class="badge bg-primary me-1">ThingsBoard</span>
                                 <span class="badge bg-primary me-1">Docker</span>
@@ -351,12 +382,14 @@
                 </div>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project 3 card-->
             <div class="row mb-5">
                 <div class="col-lg-12">
                     <div class="card shadow-sm project-card">
                         <div class="card-body">
+                            <!--baddge pill for year 3 project  -->
                             <div class="project-badge">Year 3 Project</div>
+                            <!--card title-->
                             <h3 class="card-title text-primary">RFID Attendance Tracking System</h3>
                             <p class="text-muted mb-3"><i class="bi bi-calendar3"></i> 2024 - Year 3 Project</p>
 
@@ -365,7 +398,7 @@
                                 that achieved 99% accuracy in real-world testing conditions. The system integrated
                                 seamlessly with Google Sheets for real-time data logging and reporting capabilities.
                             </p>
-
+                            <!--badge pill secttion color coded -->
                             <h6 class="mt-3">Technologies Used:</h6>
                             <div class="mb-3">
                                 <span class="badge bg-warning text-dark me-1">ESP32</span>
@@ -377,7 +410,7 @@
 
                             <h6>Key Achievements:</h6>
                             <ul>
-                                <li><strong>99% accuracy rate</strong> in real-world testing</li>
+                                <li><strong>99% accuracy rate</strong> in real world testing</li> <!--strong for bold txt -->
                                 <li>Successful deployment and positive stakeholder feedback</li>
                                 <li>Real-time data synchronization with Google Sheets</li>
                                 <li>Demonstrated practical application of IoT technologies</li>
@@ -397,22 +430,22 @@
         </div>
     </section>
 
-    <!-- experience -->
+    <!-- experience section, cards and badges -->
     <section class="py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <!-- work exp-->
-
+                    <!--academic projects cards -->
                     <div class="card shadow-sm mb-4">
                         <div class="card-body">
-                            <h4 class="card-title text-primary">First Line Helpdesk Techncian for Nissan Ireland</h4>
+                            <h4 class="card-title text-primary">First Line Helpdesk Techncian for Nissan Ireland</h4> <!--job title -->
                             <h6 class="text-muted">Nissan Ireland & Windsor Motors</h6>
-                            <p class="text-muted"><i class="bi bi-calendar3"></i> Feb 2025 - Sep 2025</p>
+                            <p class="text-muted"><i class="bi bi-calendar3"></i> Feb 2025 - Sep 2025</p> <!--calendar icon -->
 
-                           <p>
+                            <p>
                                 In Nissan Ireland I was part of a small IT team that facilitated helpdesk for dealerships and corporate.
-                           </p>
+                            </p>
 
                             <h6 class="mt-3 mb-2">Key Responsibilities:</h6>
                             <ul>
@@ -423,6 +456,7 @@
 
                             <h6 class="mt-3 mb-2">Technologies Used:</h6>
                             <div>
+                                <!--badges for tech used -->
                                 <span class="badge bg-success me-1 mb-1">Windows Server Manager</span>
                                 <span class="badge bg-success me-1 mb-1">Windows Active Directory</span>
                                 <span class="badge bg-success me-1 mb-1">Citrix Server Manager for the dealership management system</span>
@@ -441,21 +475,24 @@
         </div>
     </section>
 
-    <!-- skills-->
+    <!-- skills, cards grid icons-->
     <section class="py-5">
         <div class="container">
-
+            <!--skills grid gap of 4 between cards -->
             <div class="row g-4 mb-4">
 
                 <!-- DevOps & Cloud -->
+                <!--4 columns all cards of equal height 2 per row (desktop) -->
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm skill-card">
                         <div class="card-body">
                             <div class="skill-icon-wrapper text-center mb-3">
+                                <!--icon for cloud -->
                                 <i class="bi bi-cloud-arrow-up skill-icon"></i>
                             </div>
                             <h4 class="card-title text-center text-primary">DevOps & Cloud Computing</h4>
                             <hr>
+                            <!--list of skills, with tick before each line, custom styling via skill list, <hr> for horizontal rule -->
                             <ul class="skill-list">
                                 <li><strong>Docker:</strong> Container creation, multi-container environments, Docker Compose</li>
                                 <li><strong>CI/CD Pipelines:</strong> Azure DevOps, GitHub Actions, automated testing workflows</li>
@@ -473,6 +510,7 @@
                     <div class="card h-100 shadow-sm skill-card">
                         <div class="card-body">
                             <div class="skill-icon-wrapper text-center mb-3">
+                                <!--CPU icon,list of skills with tick icon before -->
                                 <i class="bi bi-cpu skill-icon"></i>
                             </div>
                             <h4 class="card-title text-center text-primary">IoT & Hardware Systems</h4>
@@ -493,6 +531,7 @@
                     <div class="card h-100 shadow-sm skill-card">
                         <div class="card-body">
                             <div class="skill-icon-wrapper text-center mb-3">
+                                <!--data icon with tick marks in list -->
                                 <i class="bi bi-bar-chart-line skill-icon"></i>
                             </div>
                             <h4 class="card-title text-center text-primary">Data Analysis & Visualization</h4>
@@ -539,22 +578,22 @@
         </div>
     </section>
 
-    <!-- achievements -->
+    <!-- achievements, cards, badges, grid-->
     <section id="achievements" class="py-5">
         <div class="container">
-
+            <!--achievement grid 3 columns on desktop -->
             <div class="row g-4 mb-4">
 
                 <div class="col-md-4">
                     <div class="card text-center h-100 shadow-sm achievement-card">
                         <div class="card-body">
-                            <i class="bi bi-trophy achievement-icon"></i>
+                            <i class="bi bi-trophy achievement-icon"></i> <!--trophy icon -->
                             <h5 class="card-title">99% Accuracy Rate</h5>
                             <p class="card-text">
                                 Achieved 99% accuracy with RFID attendance tracking system in Year 3 project.
                                 System was tested extensively in real-world conditions with consistent performance.
                             </p>
-                            <span class="badge bg-warning text-dark">Year 3</span>
+                            <span class="badge bg-warning text-dark">Year 3</span> <!--year 3 badge tag  -->
                         </div>
                     </div>
                 </div>
@@ -562,13 +601,13 @@
                 <div class="col-md-4">
                     <div class="card text-center h-100 shadow-sm achievement-card">
                         <div class="card-body">
-                            <i class="bi bi-check-circle achievement-icon"></i>
+                            <i class="bi bi-check-circle achievement-icon"></i> <!--big tick icon  -->
                             <h5 class="card-title">100% Test Coverage</h5>
                             <p class="card-text">
                                 Achieved complete test coverage in CI/CD pipeline project for Python calculator
                                 application with automated testing workflows.
                             </p>
-                            <span class="badge bg-success">DevOps</span>
+                            <span class="badge bg-success">DevOps</span> <!--badge icon -->
                         </div>
                     </div>
                 </div>
@@ -576,17 +615,17 @@
                 <div class="col-md-4">
                     <div class="card text-center h-100 shadow-sm achievement-card">
                         <div class="card-body">
-                            <i class="bi bi-basket achievement-icon"></i>
+                            <i class="bi bi-basket achievement-icon"></i> <!--basket icon -->
                             <h5 class="card-title">Real World Application</h5>
                             <p class="card-text">
                                 Created a fully functional clothing brand website with my own designs and marketing,
                                 Everything from adding favicon to enquiring for a GoDaddy cert and buying the URL.
                             </p>
-                            <span class="badge bg-success">Academic</span>
+                            <span class="badge bg-success">Academic</span> <!--badge icon  -->
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </section>
 
@@ -598,15 +637,16 @@
         </div>
     </section>
 
-    <!-- hobbies -->
+    <!-- hobbies, cards badges grid alert -->
     <section class="py-4">
         <div class="container">
-
+            <!--3 equal columns -->
             <div class="row g-3 mb-4">
-
+                <!--interest 1 PC buidling -->
                 <div class="col-md-4">
                     <div class="card text-center h-100 shadow-sm hobby-card">
                         <div class="card-body">
+                            <!--PC icon -->
                             <i class="bi bi-pc-display hobby-icon"></i>
                             <h5 class="card-title">PC Building & Hardware</h5>
                             <p class="card-text">
@@ -614,6 +654,7 @@
                                 including AMD Ryzen 5 9600X processor and RX 9060 XT GPU.
                             </p>
                             <div class="mt-3">
+                                <!--badges color coded -->
                                 <span class="badge bg-primary me-1">Hardware</span>
                                 <span class="badge bg-primary me-1">Performance</span>
                                 <span class="badge bg-primary me-1">Building</span>
@@ -621,7 +662,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--interest 2 -->
                 <div class="col-md-4">
                     <div class="card text-center h-100 shadow-sm hobby-card">
                         <div class="card-body">
@@ -640,7 +681,7 @@
                 </div>
             </div>
 
-            <!-- Interest Section -->
+            <!-- Interest 3 -->
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <div class="card shadow-sm">
@@ -651,27 +692,28 @@
                                 I chose to begin building a custom gaming PC as it's an opportunity to
                                 apply technical knowledge in a practical, in an hands on way.
                             </p>
-
+                            <!--2 sided column list, space for research section of the side -->
                             <h6 class="mb-3">Selected Components:</h6>
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul class="list-unstyled">
                                         <li class="mb-2">
-                                            <i class="bi bi-cpu-fill text-primary"></i>
+                                            <i class="bi bi-cpu-fill text-primary"></i> <!--cpu icon -->
                                             <strong>Processor choice:</strong> AMD Ryzen 5 9600X
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-gpu-card text-success"></i>
+                                            <i class="bi bi-gpu-card text-success"></i> <!--gpu icon -->
                                             <strong>Graphics Card:</strong> RX 9060 XT GPU
                                         </li>
                                         <li class="mb-2">
-                                            <i class="bi bi-display text-info"></i>
+                                            <i class="bi bi-display text-info"></i> <!--monitor icon -->
                                             <strong>Current Monitor:</strong> Acer 270R Curved
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="alert alert-secondary">
+                                        <!--alert section -->
                                         <h6 class="alert-heading">Research Phase</h6>
                                         <p class="small mb-0">
                                             Currently researching monitor upgrades to complement the new build.
@@ -693,27 +735,27 @@
         </div>
     </section>
 
-    <!-- contact me -->
+    <!-- contact me cards, buttons, modal -->
     <section class="py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <!-- Contact Cards -->
                     <div class="row g-4 mb-5">
-
+                        <!--email card -->
                         <div class="col-md-6">
                             <div class="card h-100 shadow-sm text-center contact-card">
                                 <div class="card-body">
-                                    <i class="bi bi-envelope contact-icon"></i>
+                                    <i class="bi bi-envelope contact-icon"></i> <!--mail icon -->
                                     <h5 class="card-title">Email</h5>
                                     <p class="card-text">
-                                        <a href="mailto:C22312211@mytudublin.ie">C22312211@mytudublin.ie</a>
+                                        <a href="mailto:C22312211@mytudublin.ie">C22312211@mytudublin.ie</a> <!--mailto link -->
                                     </p>
                                     <p class="small text-muted">Best way to reach me for professional inquiries</p>
                                 </div>
                             </div>
                         </div>
-
+                        <!--location info with pin icon -->
                         <div class="col-md-6">
                             <div class="card h-100 shadow-sm text-center contact-card">
                                 <div class="card-body">
@@ -727,24 +769,26 @@
 
                     </div>
 
-                    <!--  Modal Button -->
+                    <!--  Modal Button, connect with me section -->
                     <div class="card shadow-sm mb-5">
                         <div class="card-body text-center">
                             <h5 class="card-title mb-4">Connect With Me</h5>
-
+                            <!--button with email logo linked button to mailto addr -->
                             <div class="d-flex justify-content-center gap-3 mb-4">
                                 <a href="mailto:C22312211@mytudublin.ie" class="btn btn-outline-primary btn-lg">
                                     <i class="bi bi-envelope-fill"></i> Email
                                 </a>
+                                <!--linked button to linkedin with linkedin icon -->
                                 <a href="https://www.linkedin.com/in/cathal-flood/" target="_blank" class="btn btn-outline-primary btn-lg">
                                     <i class="bi bi-linkedin"></i> LinkedIn
                                 </a>
+                                <!--linked button to github with github icon -->
                                 <a href="https://github.com/floodcathal123" target="_blank" class="btn btn-outline-primary btn-lg">
                                     <i class="bi bi-github"></i> GitHub
                                 </a>
                             </div>
 
-                            <!-- Button to trigger modal -->
+                            <!-- Button to trigger modal with info icon -->
                             <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">
                                 <i class="bi bi-info-circle"></i> View Full Contact Details
                             </button>
@@ -756,21 +800,23 @@
     </section>
 
     <!-- modal -->
+    <!--fade class fro smooth transition animation to open modal -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="contactModalLabel">
-                        <i class="bi bi-person-circle"></i> Contact Information
+                        <i class="bi bi-person-circle"></i> Contact Information <!--info icon -->
                     </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> <!--close button as X -->
                 </div>
+                <!--Name with person icon -->
                 <div class="modal-body">
                     <div class="contact-detail mb-3">
                         <h6><i class="bi bi-person-fill text-primary"></i> Name</h6>
                         <p class="ms-4">Cathal</p>
                     </div>
-
+                    <!--course info with acadmic hat icon  -->
                     <div class="contact-detail mb-3">
                         <h6><i class="bi bi-mortarboard-fill text-primary"></i> Course</h6>
                         <p class="ms-4">
@@ -778,26 +824,26 @@
                             <span class="text-muted small">Final Year Student</span>
                         </p>
                     </div>
-
+                    <!--college icon  -->
                     <div class="contact-detail mb-3">
                         <h6><i class="bi bi-building text-primary"></i> Institution</h6>
                         <p class="ms-4">Technological University Dublin</p>
                     </div>
-
+                    <!--email section with mailto link and evenlope icon -->
                     <div class="contact-detail mb-3">
                         <h6><i class="bi bi-envelope-fill text-primary"></i> Email</h6>
                         <p class="ms-4">
                             <a href="mailto:C22312211@mytudublin.ie">C22312211@mytudublin.ie</a>
                         </p>
                     </div>
-
+                    <!--linkedin section with link and icon  -->
                     <div class="contact-detail mb-3">
                         <h6><i class="bi bi-linkedin text-primary"></i> LinkedIn</h6>
                         <p class="ms-4">
                             <a href="https://www.linkedin.com/in/cathal-flood/" target="_blank">linkedin.com/in/cathal-flood/</a>
                         </p>
                     </div>
-
+                    <!--git hub section with link and icon -->
                     <div class="contact-detail mb-3">
                         <h6><i class="bi bi-github text-primary"></i> GitHub</h6>
                         <p class="ms-4">
@@ -820,14 +866,14 @@
         </div>
     </div>
 
-    <!-- footer -->
+    <!-- footer with copyright icon for fun -->
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p>&copy; 2025 Cathal. Built with Bootstrap for TU Dublin Data Visualization CA2.</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JavaScript -->
+    <!-- Bootstrap JavaScript for interactive items toolstips and popovers-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
